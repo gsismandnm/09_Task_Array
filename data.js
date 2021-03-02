@@ -1,5 +1,4 @@
 
-
 const students = [
     {id:1, adi:'Murat', cinsiyeti:'e', bolum:'mimarlık', yasi:21, baslamaTarihi:2010, bitirmeTarihi:2014},
     {id:2, adi:'Ahmet', cinsiyeti:'e', bolum:'mühendislik', yasi:32, baslamaTarihi:2000, bitirmeTarihi:2006},
@@ -14,11 +13,6 @@ const students = [
     {id:11, adi:'Mustafa', cinsiyeti:'e', bolum:'iibf', yasi:19, baslamaTarihi:2017, bitirmeTarihi:2021},
 
 
-]
+];
 
-export default{
- students=students
-}
-
-
-
+module.export.students= students();
