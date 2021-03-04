@@ -1,7 +1,8 @@
 //STUDENTS İSİMLİ LİSTEYİ REQUIRE İLE IMPORT ETTİK.
 const {students} =require ("./data");
 
-//ÖĞRENCİLERİN YAŞLARININ TOPLAMINI BULDUK.
+//ÖĞRENCİLERİN YAŞLARININ TOPLAMINI BULDUK. 2500 YAZILI BÖLÜM KAÇTAN TOPLAMAYA BAŞLAYACAĞINI GÖSTERİR.
+
 
 const toplamSonuc= students.reduce ((toplam, mevcut) => {
     return toplam + mevcut.yasi;

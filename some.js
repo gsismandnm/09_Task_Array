@@ -5,6 +5,6 @@ const {students}=require("./data");
 //ÖĞRENCİLERDEN İSMİ KEREM OLAN VAR MI KONTROL EDECEĞİZ.
 //LİSTEMİZDE EKREM İSİMLİ ÖĞRENCİ OLMADIĞI İÇİN BİZE FALSE DÖNECEK.
 
-const sonuc = students.some(item => item.adi=="Ekrem");
+const sonuc = students.some(item => item.adi=="Fatma");
 
 console.log (sonuc);
