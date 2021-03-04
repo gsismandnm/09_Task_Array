@@ -2,7 +2,9 @@
 
 const {students}=require("./data");
 
-//ÖĞRENCİLERİN KAÇ YILDA MEZUN OLDUKLARIN BULACAĞIZ. BİTİŞ-BAŞLANGIÇ TARİHİ.
+//STUDENTS TABLOSUNDAN VERİLERİ AYNI ŞEKİLDE YENİ (NEW) BİR TABLOYA MAP YAPTIK.
+//SONRA BU TABLO İÇİNDE MÜHENDİSLİK BÖLÜMÜ VE BAŞLAMA TARİHİ 1993 OLANLARI  FİLTRELEDİK.
+//SON OLARAK DA BAŞLANGICI 1993 OLAN MÜHENDİSLİK BÖLÜMÜ ÖĞRENCİLERE ÜNİVERSİTE OLARAK ODTÜ İLAVE ETTİK.
 
 const sonuc = students.map (item  =>{
     return{
@@ -10,11 +12,11 @@ const sonuc = students.map (item  =>{
             adi:item.adi,
             cinsiyeti:item.cinsiyeti,
             bolum:item.bolum,
-            yasi:item.yası,
+            yasi:item.yasi,
             baslamaTarihi:item.baslamaTarihi,
             bitirmeTarihi:item.bitirmeTarihi,
     }
-}).filter(item => item.bolum == "mühendislik").map(item => {
+}).filter(item => item.bolum == "mühendislik" & item.baslamaTarihi==1993).map(item => {
         return{
             id:item.id,
             adi:item.adi,

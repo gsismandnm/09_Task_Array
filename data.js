@@ -6,6 +6,10 @@
  * @param {number} yasi
  * @param {number} baslamaTarihi
  * @param {number} bitirmeTarihi
+ * @param {number} id2
+ * @param {number} mat
+ * @param {number} ing
+ * @param {number} kim
  */
 
 //ÖĞRENCİ BİLGİLERİNDEN OLUŞAN BİR LİSTE OLUŞTURDUK.
@@ -24,23 +28,24 @@
 
 
 ];
+// AYNI ID NUMARASINA SAHİP KİŞİLERE MATEMATİK, İNGİLİZCE VE KİMYA NOTLARINI AYRI BİR LİSTEDE TUTTUK.
+const studentsNot =[
+    {id2:1, mat:90, ing:85, kim:70},
+    {id2:2, mat:80, ing:83, kim:80},
+    {id2:3, mat:90, ing:85, kim:70},
+    {id2:4, mat:70, ing:73, kim:80},
+    {id2:5, mat:90, ing:85, kim:70},
+    {id2:6, mat:80, ing:83, kim:80},
+    {id2:7, mat:90, ing:65, kim:70},
+    {id2:8, mat:80, ing:83, kim:80},
+    {id2:9, mat:40, ing:75, kim:70},
+    {id2:10, mat:50, ing:83, kim:80},
+    {id2:11, mat:60, ing:85, kim:76},
 
-// const studentsNot =[
-//     {id:1, mat:90, ing:85, kim:70},
-//     {id:2, mat:80, ing:83, kim:80},
-//     {id:3, mat:90, ing:85, kim:70},
-//     {id:4, mat:80, ing:83, kim:80},
-//     {id:5, mat:90, ing:85, kim:70},
-//     {id:6, mat:80, ing:83, kim:80},
-//     {id:7, mat:90, ing:85, kim:70},
-//     {id:8, mat:80, ing:83, kim:80},
-//     {id:9, mat:90, ing:85, kim:70},
-//     {id:10, mat:80, ing:83, kim:80},
-//     {id:11, mat:90, ing:85, kim:70},
-
-// ];
+];
 
 //BU LİSTEYİ MODULE.EXPORT FORMÜLÜ İLE YAYINLADIK.
 module.exports = {
-    students
-}
+    students,
+    studentsNot,
+};
