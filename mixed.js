@@ -2,9 +2,9 @@
 const {students}= require ("./data");
 
 //İSTEDİĞİMİZ DEĞERLER ÜZERİNDE İŞLEM YAPMAYA YARAR. 
-//ÖRNEKTE 2000 YILINDAN SONRA MÜHENDİSLİKTEN MEZUN OLAN ÖĞRENCİLERİN KAÇ YIL ÖNCE MEZUN OLDUKLARINI BULDUK.
+//ÖRNEKTE 2000 YILINDAN SONRA MÜHENDİSLİK VE İBBF'DEN MEZUN OLAN ÖĞRENCİLERİN GÜNÜMÜZDEN KAÇ YIL ÖNCE MEZUN OLDUKLARINI BULDUK.
 
-const sonuc = students.filter (item => item.bolum=="mühendislik" & item.baslamaTarihi >2000).map(item => {
+const sonuc = students.filter (item => item.bolum=="mühendislik" || item.bolum == "iibf").map(item => {
     return{
         id:item.id,
         adi:item.adi,

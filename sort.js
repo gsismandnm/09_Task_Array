@@ -3,7 +3,7 @@ const {students}= require ("./data");
 const {studentsNot}=require("./data");
 
 //LİSTEMİZDEKİ ÖĞRENCİLERİ ADLARINA GÖRE A-Z DOĞRU SIRALAMA YAPACAK. 
-//SONRASINDA DA MÜHENDİSLİK BÖLÜMÜ ERKEK ÖĞRENCİLERİ FİLTRELEYECEK.
+//SONRASINDA DA MÜHENDİSLİK VE MİMARLIK BÖLÜMÜ ERKEK ÖĞRENCİLERİ FİLTRELEYECEK.
 const sonuc = students.sort ((a, b) =>{
         if (a.adi > b.adi) {
             return 1;
@@ -11,7 +11,7 @@ const sonuc = students.sort ((a, b) =>{
         else {
             return -1;
         }
-    }).filter (item => item.bolum == "mühendislik" & item.cinsiyeti=="e");
+    }).filter (item => item.bolum == "mühendislik" || item.bolum =="mimarlık" & item.cinsiyeti=="e");
 
 //NOTLAR TABLOSUNDAKİ ÖĞRENCİLERDEN MATEMATİK NOTU 75 ÜZERİNDE OLANLARI NOT SIRASINA KOYDUK.
 const sonuc2 = studentsNot.sort ((a, b) =>{
